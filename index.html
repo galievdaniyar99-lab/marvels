@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Том &amp; Зендея — Үйлену тойы</title>
-<meta property="og:title" content="Том мен Зендея —Үйлену тойы">
+<title>Питер &amp; Эмджей — Үйлену тойы</title>
+<meta property="og:title" content="Питер мен Эмджей — Үйлену тойы">
 <meta property="og:description" content="Үйлену тойына шақыру">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,23 +61,20 @@
   .hero-banner{position:relative;width:100%;margin:0 0 clamp(22px,5vw,30px);line-height:0}
   .hero-frame{
     position:relative;width:100%;height:clamp(300px,76vw,430px);
-    background:repeating-linear-gradient(45deg,#1B3A78 0 18px,#16315f 18px 36px);
+    background:var(--navy);
     display:grid;place-items:center;overflow:hidden;
   }
-  .hero-frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-frame img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    -webkit-mask-image:linear-gradient(to bottom, #000 0%, #000 45%, rgba(0,0,0,.85) 62%, rgba(0,0,0,.45) 80%, rgba(0,0,0,0) 100%);
+    mask-image:linear-gradient(to bottom, #000 0%, #000 45%, rgba(0,0,0,.85) 62%, rgba(0,0,0,.45) 80%, rgba(0,0,0,0) 100%);
+  }
   .hero-empty{display:flex;flex-direction:column;align-items:center;gap:12px;color:#9DB6E6}
   .hero-empty svg{width:54px;height:54px;opacity:.7}
   .hero-empty span{font-family:'Bebas Neue',sans-serif;letter-spacing:.18em;font-size:15px}
   .hero-banner::after{
-    content:"";position:absolute;left:0;right:0;bottom:-1px;height:85%;pointer-events:none;
-    background:linear-gradient(to bottom,
-      rgba(12,26,58,0) 0%,
-      rgba(12,26,58,.06) 22%,
-      rgba(12,26,58,.18) 40%,
-      rgba(12,26,58,.36) 56%,
-      rgba(12,26,58,.58) 70%,
-      rgba(12,26,58,.82) 84%,
-      var(--navy) 100%);
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:30%;pointer-events:none;
+    background:linear-gradient(to bottom, rgba(12,26,58,0) 0%, var(--navy) 100%);
   }
   /* comic burst over hero */
   .burst{position:absolute;z-index:4;top:14px;right:14px;font-family:'Bangers',cursive;
@@ -206,7 +203,7 @@
   <div class="hero-banner reveal d1">
     <div class="burst">SAVE THE DATE!</div>
     <div class="hero-frame">
-      <img src="hero.jpg" alt="Том мен Зендея" loading="eager">
+      <img src="hero.jpg" alt="Питер мен Эмджей" loading="eager">
     </div>
   </div>
 
@@ -215,9 +212,9 @@
     <p class="eyebrow reveal d2">Үйлену тойына шақыру</p>
 
     <div class="names-block reveal d2">
-      <span class="name-line">Том</span>
+      <span class="name-line">Питер</span>
       <span class="amp">&amp;</span>
-      <span class="name-line">Зендея</span>
+      <span class="name-line">Эмджей</span>
     </div>
     <p class="date-hero reveal d3">07 шілде 2027</p>
 
@@ -230,7 +227,7 @@
         құрбы-құрдас, әріптестер мен дос-жарандар!
       </p>
       <p class="lead">
-        Ұлымыз <b>Том</b> мен келініміз <b>Зендеяның</b> өмірлерін бір
+        Ұлымыз <b>Питер</b> мен келініміз <b>Эмджейдің</b> өмірлерін бір
         арнаға қосып, шаңырақ көтеру салтанатына шақырамыз.
       </p>
       <p class="lead">
@@ -257,7 +254,7 @@
       <div class="detail">
         <div class="label">Мекен-жайы</div>
         <div class="big">«Aq Saray» мейрамханасы</div>
-        <div class="sub">Орал қаласы</div>
+        <div class="sub">Нью-Йорк қаласы</div>
       </div>
       <a class="map-btn" href="https://2gis.kz/uralsk/geo/22800108811826311/51.447418%2C51.246349?m=51.44687%2C51.245549%2F17.53" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
